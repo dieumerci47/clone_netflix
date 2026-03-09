@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:clone_netflix/Pages/home_page.dart';
+// import 'package:clone_netflix/Pages/home_page.dart';
+import 'package:clone_netflix/Pages/onboarding_page.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -21,14 +22,12 @@ class LoadingPageState extends State<LoadingPage> {
   }
 
   Future<Timer> loadAnimation() async {
-    return Timer(const Duration(seconds: 7), onLoaded);
+    return Timer(const Duration(seconds: 6), onLoaded);
   }
 
   void onLoaded() {
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (context) => const MyHomePage(title: "My home page"),
-      ),
+      MaterialPageRoute(builder: (context) => const OnboardingPage()),
     );
   }
 
