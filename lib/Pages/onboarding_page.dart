@@ -1,3 +1,4 @@
+import 'package:clone_netflix/Pages/login/signin_page.dart';
 import 'package:clone_netflix/widgets/onboarding.dart';
 import 'package:flutter/material.dart';
 
@@ -96,7 +97,12 @@ class OnboardingPageState extends State<OnboardingPage> {
                 Container(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SigninPage()),
+                      );
+                    },
                     child: Text("Get Started"),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.red,
