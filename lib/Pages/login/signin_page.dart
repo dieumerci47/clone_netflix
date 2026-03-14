@@ -108,7 +108,6 @@ class _SigninPageState extends State<SigninPage> {
                       ); */
                     }
                   },
-                  child: Text("Sign In"),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.red,
                     foregroundColor: Colors.white,
@@ -116,6 +115,7 @@ class _SigninPageState extends State<SigninPage> {
                       borderRadius: BorderRadiusGeometry.circular(0),
                     ),
                   ),
+                  child: Text("Sign In"),
                 ),
               ),
               SizedBox(height: 20),
@@ -129,7 +129,6 @@ class _SigninPageState extends State<SigninPage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: Text("Sign Up"),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.grey[800],
                     foregroundColor: Colors.white,
@@ -137,6 +136,7 @@ class _SigninPageState extends State<SigninPage> {
                       borderRadius: BorderRadiusGeometry.circular(0),
                     ),
                   ),
+                  child: Text("Sign Up"),
                 ),
               ),
               SizedBox(height: 20),
